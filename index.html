@@ -1017,9 +1017,14 @@
 
       function send_msg_box_wasap()
       {
-        var wsp_txt = $('msg_box').val();
+        var wsp_txt = $('#msg_box').val();
+        wsp_txt = encodeURIComponent(wsp_txt.replaceAll(" ", "+"));
+
+        // alert(wsp_txt);        
 
         var url = "http://wasap.my/60177686939/hi+amazonklia+we+need+your+help.+" + wsp_txt;
+
+        // alert(url);
 
         window.open(url);
       }
