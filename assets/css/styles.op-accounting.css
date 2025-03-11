@@ -95,6 +95,98 @@ hr {
 }
 
 /*------------------------------------
+  Go To Call v1
+------------------------------------*/
+[class*="u-go-to-call"] {
+  display: none;
+}
+
+.u-go-to-call-v1 {
+  width: 3.57143rem;
+  height: 3.57143rem;
+  display: block;
+  background-color: rgba(245, 158, 66, 1.0);
+  color: #0b0b0b;
+  border-radius: 50%;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+  transition: .3s ease-out;
+  z-index: 12;
+}
+
+.u-go-to-call-v1 i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.u-go-to-call-v1:hover, .u-go-to-call-v1:focus:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #c9761e;
+}
+
+.u-go-to-call-v1:focus {
+  text-decoration: none;
+  color: #0b0b0b;
+  background-color: rgba(245, 158, 66, 1.0);
+}
+
+@media (max-width: 575px) {
+  .u-go-to-call-v1 {
+    -webkit-transform: scale(1.4, 1.4);
+            transform: scale(1.4, 1.4);
+  }
+}
+
+/*------------------------------------
+  Go To Wasap v1
+------------------------------------*/
+[class*="u-go-to-wasap"] {
+  display: none;
+}
+
+.u-go-to-wasap-v1 {
+  width: 3.57143rem;
+  height: 3.57143rem;
+  display: block;
+  background-color: rgba(107, 145, 31, 1.0);
+  color: #0b0b0b;
+  border-radius: 50%;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+  transition: .3s ease-out;
+  z-index: 12;
+}
+
+.u-go-to-wasap-v1 i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.u-go-to-wasap-v1:hover, .u-go-to-wasap-v1:focus:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #597a15;
+}
+
+.u-go-to-wasap-v1:focus {
+  text-decoration: none;
+  color: #0b0b0b;
+  background-color: rgba(107, 145, 31, 1.0);
+}
+
+@media (max-width: 575px) {
+  .u-go-to-wasap-v1 {
+    -webkit-transform: scale(1.4, 1.4);
+            transform: scale(1.4, 1.4);
+  }
+}
+
+/*------------------------------------
   Go To v1
 ------------------------------------*/
 [class*="u-go-to"] {
@@ -106,7 +198,7 @@ hr {
   height: 3.57143rem;
   display: block;
   background-color: rgba(255, 255, 255, 0.7);
-  color: #999;
+  color: #0b0b0b;
   border-radius: 50%;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
   transition: .3s ease-out;
@@ -124,12 +216,12 @@ hr {
 .u-go-to-v1:hover, .u-go-to-v1:focus:hover {
   text-decoration: none;
   color: #fff;
-  background-color: #9AC93B;
+  background-color: #3c4131;
 }
 
 .u-go-to-v1:focus {
   text-decoration: none;
-  color: #999;
+  color: #0b0b0b;
   background-color: rgba(255, 255, 255, 0.7);
 }
 

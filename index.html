@@ -782,7 +782,7 @@
               <!-- End Footer Content -->
 
               <!-- Google Map -->
-              <div class="col-md-12 col-lg-4 g-min-height-400">
+              <div class="g-hidden-md-down col-md-12 col-lg-4 g-min-height-400">
                 <!--div id="gMap1" class="js-g-map h-100" data-type="custom" data-lat="40.674" data-lng="-73.946" data-zoom="12" data-title="Travel" data-styles="[
                         ['', '', [{'saturation':-100},{'lightness':51},{'visibility':'simplified'}]],
                         ['', 'labels', [{'visibility':'on'}]],
@@ -813,9 +813,11 @@
                     <!--p>Email:
                       <a class="g-color-white" href="mailto:admin@amaronrescue.com">
                         <strong>admin@amaronrescue.com</strong></a>
-                    </p-->
+                    </p>
                     <p>Phone number: <strong class="g-color-white">+6017 768 6939</strong></p>
-                    <p>Location: <strong class="g-color-white">Nilai Perdana</strong></p>
+                    <p>Location: <strong class="g-color-white">Nilai Perdana</strong></p-->
+
+                    <a class="btn btn-lg u-btn-orange g-font-weight-700 g-font-size-12 text-uppercase g-rounded-50 g-px-40 g-py-15"  href="tel:+60177686939">Call us now!</a>
                   </address>
 
                   <ul class="list-inline mb-0">
@@ -887,7 +889,31 @@
       </section>
       <!-- End Section Content -->
 
-      <a class="js-go-to u-go-to-v1" href="#"
+      <a class="g-hidden-md-up js-go-to-call u-go-to-call-v1" href="tel:+60177686939"
+         data-type="fixed"
+         data-position='{
+           "bottom": 165,
+           "right": 15
+         }'
+         data-offset-top="400"
+         data-compensation="#js-header"
+         data-show-effect="zoomIn">
+        <i class="fa fa-phone"></i>
+      </a>
+
+      <a class="js-go-to-wasap u-go-to-wasap-v1" href="http://wasap.my/60177686939/hi+amaronklia+we+need+your+help"
+         data-type="fixed"
+         data-position='{
+           "bottom": 85,
+           "right": 15
+         }'
+         data-offset-top="400"
+         data-compensation="#js-header"
+         data-show-effect="zoomIn">
+        <i class="fa fa-whatsapp"></i>
+      </a>
+
+      <a class="js-go-to u-go-to-v1" href="#home"
          data-type="fixed"
          data-position='{
            "bottom": 15,
@@ -950,6 +976,12 @@
 
         // initialization of go to section
         $.HSCore.components.HSGoTo.init('.js-go-to');
+
+        // initialization of go to call section
+        $.HSCore.components.HSGoTo.init('.js-go-to-call');
+
+        // initialization of go to wasap section
+        $.HSCore.components.HSGoTo.init('.js-go-to-wasap');
       });
 
       $(window).on('load', function() {
