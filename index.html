@@ -138,7 +138,7 @@
                 <p class="g-hidden-xs-down g-max-width-645 g-color-white-opacity-0_9 mx-auto g-mb-35">If you happen to be in these area and your vehicle's battery weakened, do text us ASAP!</p>
                 <a class="btn btn-lg u-btn-primary g-font-weight-700 g-font-size-12 text-uppercase g-rounded-50 g-px-40 g-py-15" href="http://wasap.my/60177686939/hi+amaronklia+we+need+your+help">Text Us on WhatsApp</a>
                 <p class="g-hidden-md-up g-max-width-645 g-color-white-opacity-0_9 mx-auto g-font-weight-700 g-font-size-24 g-my-10">or</p>
-                <a class="g-hidden-md-up btn btn-lg u-btn-primary g-font-weight-700 g-font-size-12 text-uppercase g-rounded-50 g-px-40 g-py-15" href="tel:+60177686939">Call us now!</a>
+                <a class="g-hidden-md-up btn btn-lg u-btn-orange g-font-weight-700 g-font-size-12 text-uppercase g-rounded-50 g-px-40 g-py-15" href="tel:+60177686939">Call us now!</a>
               </div>
             </div>
             <!-- End Promo Block -->
@@ -156,7 +156,7 @@
                 <p class="g-hidden-xs-down g-max-width-645 g-color-white-opacity-0_9 mx-auto g-mb-35">We understand it is very unsafe to be at the roadside with the broken car, even more if you're with your loved ones. Text us ASAP!</p>
                 <a class="btn btn-lg u-btn-primary g-font-weight-700 g-font-size-12 text-uppercase g-rounded-50 g-px-40 g-py-15" href="http://wasap.my/60177686939/hi+amaronklia+we+need+your+help">Text Us on WhatsApp</a>
                 <p class="g-hidden-md-up g-max-width-645 g-color-white-opacity-0_9 g-font-weight-700 g-font-size-24 mx-auto g-my-10">or</p>
-                <a class="g-hidden-md-up btn btn-lg u-btn-primary g-font-weight-700 g-font-size-12 text-uppercase g-rounded-50 g-px-40 g-py-15" href="tel:+60177686939">Call us now!</a>
+                <a class="g-hidden-md-up btn btn-lg u-btn-orange g-font-weight-700 g-font-size-12 text-uppercase g-rounded-50 g-px-40 g-py-15" href="tel:+60177686939">Call us now!</a>
               </div>
             </div>
             <!-- End Promo Block -->
@@ -806,10 +806,10 @@
                   </header>
 
                   <div class="lead g-font-weight-400 g-mb-40">
-                    <p>You can contact us through any of these mediums, but get a quicker response through WhatsApp.</p>
+                    <p>You can contact us through any of these mediums, but get a quicker response through WhatsApp or a phone call.</p>
                   </div>
 
-                  <address class="text-uppercase g-line-height-2 g-mb-40">
+                  <address class="g-hidden-md-up g-text-uppercase g-line-height-2 g-mb-40">
                     <!--p>Email:
                       <a class="g-color-white" href="mailto:admin@amaronrescue.com">
                         <strong>admin@amaronrescue.com</strong></a>
@@ -889,7 +889,34 @@
       </section>
       <!-- End Section Content -->
 
-      <a class="g-hidden-md-up js-go-to-call u-go-to-call-v1" href="tel:+60177686939"
+
+      <!-- Call Widget -->
+      <a href="tel:+60177686939" class="g-hidden-md-up js-call-widget call-widget text-white" aria-label="Call"
+        data-type="fixed"
+        data-position='{
+          "bottom": 165,
+          "right": 15
+        }'
+        data-offset-top="400"
+        data-compensation="#js-header"
+        data-show-effect="zoomIn">
+        <i class="fa fa-phone"></i>
+      </a>
+        
+          <!-- WhatsApp Widget -->
+      <a href="http://wasap.my/60177686939/hi+amaronklia+we+need+your+help" class="js-wasap-widget wasap-widget text-white" aria-label="WhatsApp"
+        data-type="fixed"
+        data-position='{
+          "bottom": 85,
+          "right": 15
+        }'
+        data-offset-top="400"
+        data-compensation="#js-header"
+        data-show-effect="zoomIn">
+        <i class="fa fa-whatsapp"></i>
+      </a>
+
+      <!--a class="g-hidden-md-up js-go-to-call u-go-to-call-v1" href="tel:+60177686939"
          data-type="fixed"
          data-position='{
            "bottom": 165,
@@ -911,7 +938,7 @@
          data-compensation="#js-header"
          data-show-effect="zoomIn">
         <i class="fa fa-whatsapp"></i>
-      </a>
+      </a-->
 
       <a class="js-go-to u-go-to-v1" href="#home"
          data-type="fixed"
@@ -945,6 +972,7 @@
     <script src="assets/js/components/hs.carousel.js"></script>
     <script src="assets/js/components/gmap/hs.map.js"></script>
     <script src="assets/js/components/hs.go-to.js"></script>
+    <script src="assets/js/components/hs.floating-widget.js"></script>
 
     <!-- JS Master Slider -->
     <script src="assets/vendor/master-slider/source/assets/js/masterslider.min.js"></script>
@@ -977,11 +1005,11 @@
         // initialization of go to section
         $.HSCore.components.HSGoTo.init('.js-go-to');
 
-        // initialization of go to call section
-        $.HSCore.components.HSGoTo.init('.js-go-to-call');
+        // initialization of call widget
+        $.HSCore.components.HSFloatingWidget.init('.js-call-widget');
 
-        // initialization of go to wasap section
-        $.HSCore.components.HSGoTo.init('.js-go-to-wasap');
+        // initialization of wasap widget
+        $.HSCore.components.HSFloatingWidget.init('.js-wasap-widget');
       });
 
       $(window).on('load', function() {

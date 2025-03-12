@@ -86,11 +86,11 @@
         }
 
         $this.on('click', function (e) {
-          e.preventDefault();
+            e.preventDefault();
 
-          $('html, body').stop().animate({
-            'scrollTop': targetOffsetTop()
-          }, 800);
+            $('html, body').stop().animate({
+              'scrollTop': targetOffsetTop()
+            }, 800);
         });
 
         if (!$this.data('offset-top') && !$this.hasClass('js-animation-was-fired') && type != 'static') {

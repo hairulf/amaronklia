@@ -95,13 +95,13 @@ hr {
 }
 
 /*------------------------------------
-  Go To Call v1
+  Call Widget
 ------------------------------------*/
 [class*="u-go-to-call"] {
   display: none;
 }
 
-.u-go-to-call-v1 {
+.call-widget {
   width: 3.57143rem;
   height: 3.57143rem;
   display: block;
@@ -109,11 +109,16 @@ hr {
   color: #0b0b0b;
   border-radius: 50%;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+  display: flex; /* Uses flexbox for centering content */
+  align-items: center; /* Vertically centers content */
+  justify-content: center; /* Horizontally centers content */
+  font-size: 24px; /* Sets font size */
+  text-decoration: none; /* Removes underline from links */
   transition: .3s ease-out;
   z-index: 12;
 }
 
-.u-go-to-call-v1 i {
+.call-widget i {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -121,33 +126,33 @@ hr {
           transform: translate(-50%, -50%);
 }
 
-.u-go-to-call-v1:hover, .u-go-to-call-v1:focus:hover {
+.call-widget:hover, .call-widget:focus:hover {
   text-decoration: none;
   color: #fff;
   background-color: #c9761e;
 }
 
-.u-go-to-call-v1:focus {
+.call-widget:focus {
   text-decoration: none;
   color: #0b0b0b;
   background-color: rgba(245, 158, 66, 1.0);
 }
 
 @media (max-width: 575px) {
-  .u-go-to-call-v1 {
+  .call-widget {
     -webkit-transform: scale(1.4, 1.4);
             transform: scale(1.4, 1.4);
   }
 }
 
 /*------------------------------------
-  Go To Wasap v1
+  Wasap Widget
 ------------------------------------*/
 [class*="u-go-to-wasap"] {
   display: none;
 }
 
-.u-go-to-wasap-v1 {
+.wasap-widget {
   width: 3.57143rem;
   height: 3.57143rem;
   display: block;
@@ -155,11 +160,16 @@ hr {
   color: #0b0b0b;
   border-radius: 50%;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+  display: flex; /* Uses flexbox for centering content */
+  align-items: center; /* Vertically centers content */
+  justify-content: center; /* Horizontally centers content */
+  font-size: 24px; /* Sets font size */
+  text-decoration: none; /* Removes underline from links */
   transition: .3s ease-out;
   z-index: 12;
 }
 
-.u-go-to-wasap-v1 i {
+.wasap-widget i {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -167,20 +177,20 @@ hr {
           transform: translate(-50%, -50%);
 }
 
-.u-go-to-wasap-v1:hover, .u-go-to-wasap-v1:focus:hover {
+.wasap-widget:hover, .wasap-widget:focus:hover {
   text-decoration: none;
   color: #fff;
   background-color: #597a15;
 }
 
-.u-go-to-wasap-v1:focus {
+.wasap-widget:focus {
   text-decoration: none;
   color: #0b0b0b;
   background-color: rgba(107, 145, 31, 1.0);
 }
 
 @media (max-width: 575px) {
-  .u-go-to-wasap-v1 {
+  .wasap-widget {
     -webkit-transform: scale(1.4, 1.4);
             transform: scale(1.4, 1.4);
   }
